@@ -1,0 +1,17 @@
+import java.util.*;
+public class Series
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int i,n;
+double sum=0.0;
+System.out.println("enter a number =");
+n=sc.nextInt();
+for(i=1;i<=n;i++)
+{
+sum=sum+1.0/i;
+}
+System.out.println("The value of the series is = "+sum);
+}
+}
