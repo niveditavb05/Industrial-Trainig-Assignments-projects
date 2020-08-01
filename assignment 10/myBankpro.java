@@ -12,11 +12,11 @@ import java.text.*;
                        //************************start of main class***************************
 public class myBankpro  
              {
-            public static void main(String[] args) 
+            public static void main(String[] args)          //start of main method  
                   {
 		Scanner sc = new Scanner(System.in);
 		int choice;       //to get choice from user
-		do 
+		do                            //do-while loop start
                       {
 			System.out.println("1. Add New Account Holder");
 			System.out.println("2. Credit Transaction.");
@@ -77,11 +77,11 @@ public class myBankpro
 					
 			}
 			
-		} while(choice!=6);
+		} while(choice!=6);              //end of do-while loop
 
-	}
+	}      //end of main method
 
-}
+}               //****************** end of main class *************************
             
             //********class account for tbl_account********
  class account {
@@ -175,7 +175,7 @@ this.balance = balance;
 }                                 //******************end of transaction class*******************
 
 
-
+                     //************************* start of manage account activities class*******************
 class manageacc 
 {
 	Integer totalBalance, ammount;
@@ -261,7 +261,7 @@ class manageacc
 			System.out.println(e);	//raise the exception if  any
                                           }
                        }
-	                     //******************8method to withdraw transaction in account****************
+	                     //******************method to withdraw transaction in account****************
 	public void withdrawTransaction(Integer accno, Integer ammount)
                              {
 		try {
@@ -381,7 +381,7 @@ class manageacc
 	    java.util.Date today = new java.util.Date();
 	    return new java.sql.Date(today.getTime());
 	}
-}
+}                       //*********************** end of manage account activties class ************************
                             
 
 
