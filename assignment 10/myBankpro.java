@@ -237,7 +237,7 @@ class manageacc
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");             // load and establish conncetion to JDBC driver
-			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3307/db_bank","root"," ");  
+			Connection con=DriverManager.getConnection(  DB_URL,USER,PASS);  
                          Statement stmt=con.createStatement();                 //load balance ammount before actual transaction 
 			String getBalance = "select total_balance from db_bank.tbl_account where accountnumber="+accno;   //query to get total_balance from tbl_account
 			ResultSet rs = stmt.executeQuery( getBalance);
@@ -268,7 +268,7 @@ class manageacc
 
 			                      // load and establish conncetion to JDBC driver
 			Class.forName("com.mysql.jdbc.Driver");  
-			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3307/db_bank","root"," ");  
+			Connection con=DriverManager.getConnection(  DB_URL,USER,PASS);  
 			                    //load balance ammount before actual transaction 
 			Statement stmt=con.createStatement();
 			                   //query to get total_balance from tbl_account
@@ -311,7 +311,7 @@ class manageacc
 	         try {
 			                   // load and establish conncetion to JDBC driver
 			Class.forName("com.mysql.jdbc.Driver");  
-			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3307/db_bank","root"," ");  
+			Connection con=DriverManager.getConnection(  DB_URL,USER,PASS);  
 			                   //select rows from both  tbl_account and tbl_transaction tables
 			Statement stmt=con.createStatement();
 			String getAllTransactions = "select transaction date, ammount, transaction type, balance FROM db_bank.tbl_transaction where  accountnumber="+accno;
@@ -360,7 +360,7 @@ class manageacc
 		try {
 			                      // load and establish conncetion to JDBC driver
 			Class.forName("com.mysql.jdbc.Driver");  
-			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3307/db_bank","root"," ");  
+			Connection con=DriverManager.getConnection(  DB_URL,USER,PASS);  
 			                    //delete record in  tbl_transaction of given account number
 			Statement stmt=con.createStatement();
 			String deleteTrans = " DELETE FROM db_bank.tbl_transaction where accountnumber="+accno;
