@@ -7,6 +7,83 @@ import java.sql.*;
 import java.text.*;
 
 
+
+
+
+                       //************************start of main class***************************
+public class myBank  
+             {
+            public static void main(String[] args) 
+                  {
+		Scanner sc = new Scanner(System.in);
+		int choice;       //to get choice from user
+		do 
+                      {
+			System.out.println("1. Add New Account Holder");
+			System.out.println("2. Credit Transaction.");
+			System.out.println("3. Withdraw Transaction.");
+			System.out.println("4. Print Passbook");
+			System.out.println("5. Delete Account");
+			System.out.println("6. Exit");
+		         System.out.println("Enter Your Choice ");
+		       choice = sc.nextInt();
+			manageacc op = new manageacc();
+			account c = new account();          //object of pojo class customer which used as Account in database
+			Integer ammount;
+			switch(choice){
+				case 1:                //gettinng info from customer for creating a account as he entered Choice 1
+				        System.out.println("Enter Name: ");
+					c.name = sc.next();			        //get name
+					System.out.println("Enter Age: ");
+					c.age = sc.nextInt();				//get age
+					System.out.println("Enter City: ");
+					c.add= sc.next();				//get city
+					System.out.println("Enter OpeningBalace: ");
+				         c.oBal = sc.nextInt();//get opening ammout
+			               op.savedetails( c.name, c.age, c.add, c.oBal);//Method will save new account in account table in DB  
+				break;
+			       case 2:
+					System.out.println("Enter AcctNo: ");
+					c.accno = sc.nextInt();	                 	//get acc. no
+					System.out.println("Enter Ammount to credit: ");
+					ammount  = sc.nextInt();			//get ammount to be credited
+					    //Method will call credit transcantion method in operationManager class 
+					op.depositTransaction(c.accno , ammount); 
+				break;
+				case 3:
+					System.out.println("Enter AcctNo: ");
+					c.accno = sc.nextInt();		                 //get acc. no
+					System.out.println("Enter Ammount to Withdraw: ");
+					ammount  = sc.nextInt();			//get withdraw ammount
+				              //Method will call Withdrwa transcantion method in operationManager class 
+					op.withdrawTransaction(c.accno , ammount);
+				break;
+				case 4:
+					System.out.println("Enter AcctNo: ");
+					c.accno = sc.nextInt();	//get acc. no
+				                    //Call  printPassbook Method in in operationManager class to Print info
+			                op.printPassBook(c.accno);
+				break;
+				case 5: 
+					System.out.println("Enter AcctNo: ");
+					c.accno = sc.nextInt();	//get acc. no
+				                   //Call deleteAccount Method in in operationManager class to flush info
+					op.deleteAccount(c.accno);
+				break;
+				case 6: 
+					System.out.println("EXIT");	           //Exit message will be shown on this choice
+					break;
+				default:
+					System.out.println("Oops.....Select correct option.");	//Deafult statement for wrong choice
+					
+			}
+			
+		} while(choice!=6);
+
+	}
+
+}
+
             
             //********class account for tbl_account********
  class account {
@@ -338,77 +415,3 @@ e.printStackTrace();
                             
 
 
-
-                       //************************start of main class***************************
-public class myBank  
-             {
-            public static void main(String[] args) 
-                  {
-		Scanner sc = new Scanner(System.in);
-		int choice;       //to get choice from user
-		do 
-                      {
-			System.out.println("1. Add New Account Holder");
-			System.out.println("2. Credit Transaction.");
-			System.out.println("3. Withdraw Transaction.");
-			System.out.println("4. Print Passbook");
-			System.out.println("5. Delete Account");
-			System.out.println("6. Exit");
-		         System.out.println("Enter Your Choice ");
-		       choice = sc.nextInt();
-			manageacc op = new manageacc();
-			account c = new account();          //object of pojo class customer which used as Account in database
-			Integer ammount;
-			switch(choice){
-				case 1:                //gettinng info from customer for creating a account as he entered Choice 1
-				        System.out.println("Enter Name: ");
-					c.name = sc.next();			        //get name
-					System.out.println("Enter Age: ");
-					c.age = sc.nextInt();				//get age
-					System.out.println("Enter City: ");
-					c.add= sc.next();				//get city
-					System.out.println("Enter OpeningBalace: ");
-				         c.oBal = sc.nextInt();//get opening ammout
-			               op.savedetails( c.name, c.age, c.add, c.oBal);//Method will save new account in account table in DB  
-				break;
-			       case 2:
-					System.out.println("Enter AcctNo: ");
-					c.accno = sc.nextInt();	                 	//get acc. no
-					System.out.println("Enter Ammount to credit: ");
-					ammount  = sc.nextInt();			//get ammount to be credited
-					    //Method will call credit transcantion method in operationManager class 
-					op.depositTransaction(c.accno , ammount); 
-				break;
-				case 3:
-					System.out.println("Enter AcctNo: ");
-					c.accno = sc.nextInt();		                 //get acc. no
-					System.out.println("Enter Ammount to Withdraw: ");
-					ammount  = sc.nextInt();			//get withdraw ammount
-				              //Method will call Withdrwa transcantion method in operationManager class 
-					op.withdrawTransaction(c.accno , ammount);
-				break;
-				case 4:
-					System.out.println("Enter AcctNo: ");
-					c.accno = sc.nextInt();	//get acc. no
-				                    //Call  printPassbook Method in in operationManager class to Print info
-			                op.printPassBook(c.accno);
-				break;
-				case 5: 
-					System.out.println("Enter AcctNo: ");
-					c.accno = sc.nextInt();	//get acc. no
-				                   //Call deleteAccount Method in in operationManager class to flush info
-					op.deleteAccount(c.accno);
-				break;
-				case 6: 
-					System.out.println("EXIT");	           //Exit message will be shown on this choice
-					break;
-				default:
-					System.out.println("Oops.....Select correct option.");	//Deafult statement for wrong choice
-					
-			}
-			
-		} while(choice!=6);
-
-	}
-
-}
