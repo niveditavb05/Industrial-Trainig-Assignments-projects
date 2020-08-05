@@ -1,0 +1,9 @@
+
+ Name : nivedita
+ Account : 1
+ Address : latur
+ Balance : 2122
+ transaction :
+*******************************
+date		Amount 		  transaction type 		  Balance 
+2020-08-05       2122                   cash                     2122
