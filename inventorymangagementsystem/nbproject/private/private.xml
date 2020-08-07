@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/home/Documents/NetBeansProjects/inventorymangagementsystem/nbproject/build-impl.xml</file>
+            <file>file:/C:/Users/home/Documents/NetBeansProjects/inventorymangagementsystem/src/com/main/view/ChangeDetails.java</file>
+            <file>file:/C:/Users/home/Documents/NetBeansProjects/inventorymangagementsystem/src/com/main/view/Products.java</file>
+            <file>file:/C:/Users/home/Documents/NetBeansProjects/inventorymangagementsystem/src/com/main/controller/ConnectionFactory.java</file>
+            <file>file:/C:/Users/home/Documents/NetBeansProjects/inventorymangagementsystem/src/com/main/view/Customers.java</file>
+            <file>file:/C:/Users/home/Documents/NetBeansProjects/inventorymangagementsystem/src/com/main/DAO/SupplierDAO.java</file>
+            <file>file:/C:/Users/home/Documents/NetBeansProjects/inventorymangagementsystem/src/com/main/view/SalesReport.java</file>
+            <file>file:/C:/Users/home/Documents/NetBeansProjects/inventorymangagementsystem/src/com/main/DAO/UserDAO.java</file>
+            <file>file:/C:/Users/home/Documents/NetBeansProjects/inventorymangagementsystem/src/com/main/dto/ProductDTO.java</file>
+            <file>file:/C:/Users/home/Documents/NetBeansProjects/inventorymangagementsystem/src/com/main/view/Users.java</file>
+            <file>file:/C:/Users/home/Documents/NetBeansProjects/inventorymangagementsystem/src/com/main/view/Dashboard.java</file>
+            <file>file:/C:/Users/home/Documents/NetBeansProjects/inventorymangagementsystem/src/com/main/dto/UserDTO.java</file>
+            <file>file:/C:/Users/home/Documents/NetBeansProjects/inventorymangagementsystem/src/com/main/view/Suppliers.java</file>
+            <file>file:/C:/Users/home/Documents/NetBeansProjects/inventorymangagementsystem/src/com/main/view/Logs.java</file>
+            <file>file:/C:/Users/home/Documents/NetBeansProjects/inventorymangagementsystem/src/com/main/view/Purchase.java</file>
+            <file>file:/C:/Users/home/Documents/NetBeansProjects/inventorymangagementsystem/src/com/main/DAO/CustomerDAO.java</file>
+            <file>file:/C:/Users/home/Documents/NetBeansProjects/inventorymangagementsystem/src/com/main/dto/CustomerDTO.java</file>
+            <file>file:/C:/Users/home/Documents/NetBeansProjects/inventorymangagementsystem/src/com/main/dto/SupplierDTO.java</file>
+            <file>file:/C:/Users/home/Documents/NetBeansProjects/inventorymangagementsystem/src/com/main/view/About.java</file>
+            <file>file:/C:/Users/home/Documents/NetBeansProjects/inventorymangagementsystem/src/com/main/view/CurrentStocks.java</file>
+            <file>file:/C:/Users/home/Documents/NetBeansProjects/inventorymangagementsystem/src/inventorymangagementsystem/Inventorymangagementsystem.java</file>
+            <file>file:/C:/Users/home/Documents/NetBeansProjects/inventorymangagementsystem/src/com/main/view/HomePage.java</file>
+            <file>file:/C:/Users/home/Documents/NetBeansProjects/inventorymangagementsystem/src/com/main/DAO/ProductDAO.java</file>
+            <file>file:/C:/Users/home/Documents/NetBeansProjects/inventorymangagementsystem/src/com/main/view/LoginDialog.java</file>
+        </group>
+    </open-files>
+</project-private>
