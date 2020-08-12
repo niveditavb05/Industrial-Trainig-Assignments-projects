@@ -179,7 +179,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `fullname`, `location`, `phone`, `username`, `password`, `category`) VALUES
-(54, 'Sajan Rajbhandari', 'Pokhara', '9849284991', 'user4', 'aaf066e7c2d6185491e19490bb4c3f3a', 'ADMINISTRATOR'),
+(54, 'Sajan Rajbhandari', 'Pokhara', '9849284991', 'user4', 'cc03e747a6afbbcbf8be7668acfebee5', 'ADMINISTRATOR'),
 (55, 'Birajdar Nivedita', 'Nalegaon', '9764046861', 'user5', 'a791842f52a0acfbb3a783378c066b8', 'NORMAL USER');
 
 --
